@@ -1,0 +1,49 @@
+# Compiled executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Static and shared libraries
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+
+# Debug files
+*.pdb
+
+# Build directories
+build/
+bin/
+dist/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Visual Studio files
+.vs/
+*.sln
+*.vcxproj*
+*.user
+
+# VS Code settings
+.vscode/
+
+# CLion files
+.idea/
+cmake-build-*/
+
+# macOS files
+.DS_Store
+
+# Linux temporary files
+*~
