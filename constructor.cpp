@@ -29,10 +29,20 @@ class Bank{
     Bank(){
         cout<<"Default Constructor is invoked"<<endl; // default constructor is invoked
     }
-    Bank(string name,int accno,int balance){
-        this->name=name;
+    // example of inline constructor 
+    // inline Bank(string n,int a,int b):name(n),accno(a),balance(b){
+
+    // }
+    Bank(string name,int accno,int balance){ // here bank() and bank(para1,para2,para3) function name same but parameter diff - construtor overloading
+        this->name=name;  // this pointer is used to locate the object (current)
         this->accno=accno;
         this->balance=balance;
+    }
+    //copy constructor
+    Bank(Bank &b){
+        name = b.name;
+        accno = b.accno;
+        balance = b.balance;
     }
     void display(){
         cout << "---------------- Customer Bank Details ----------------" << endl;
@@ -44,5 +54,7 @@ int main(){
     Bank b1;// creating object
     Bank b2("Mahesh Raj Lamsal",10000001,1000);
     b2.display();
+    Bank b3(b2);
+    b3.display();
     return 0;
 }
