@@ -7,7 +7,7 @@ Characteristics of constructor:
 1. Constructor name should be same as name of the class .
 2. A class can have multiple constructor and can be overloaded.
 3. Constructor can take multiple arguments.
-4. Constructor can return value not even void.
+4. Constructor cannot return value not even void.
 5. It is used to initialize value.
 
 Types of constructor
@@ -39,7 +39,7 @@ class Bank{
         this->balance=balance;
     }
     //copy constructor
-    Bank(Bank &b){
+    Bank(const Bank &b){
         name = b.name;
         accno = b.accno;
         balance = b.balance;
